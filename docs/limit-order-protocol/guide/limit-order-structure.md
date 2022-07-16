@@ -5,9 +5,7 @@ sidebar_position: 3
 # Limit order structure
 
 | Field            | Type     | Description                                                                                                                        |
-| ---------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `salt`           | `String` | some unique value. It is necessary to be able to create limit orders with the same parameters (so that they have a different hash) |
-| `makerAsset`     | `String` | the address of the asset you want to sell (address of a token contract)                                                            |
+| ---------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- ||    `makerAsset`     | `String` | the address of the asset you want to sell (address of a token contract)                                                            |
 | `takerAsset`     | `String` | the address of the asset you want to buy (address of a token contract)                                                             |
 | `maker`          | `String` | the address of the limit order creator     |
 | `receiver`       | `String` | by default contains a zero address, which means that taker asset will be sent to the address of the creator of the limit order. If you set a value, then taker asset will be sent to the specified address   |
